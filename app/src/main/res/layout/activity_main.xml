@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:text="Aptitude"
+        android:textAlignment="center"
+        android:textColor="#0539F7"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bungee_inline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="18dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/carme"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/que"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#448AFF"
+        android:textSize="30sp"
+        app:fontFamily="@font/bungee_shade"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:fontFamily="@font/faster_one"
+        android:inputType="number"
+        android:textColor="#B90202"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:paddingTop="6dp"
+
+        android:text="No of Questions :"
+        android:textColor="#D31E5D"
+        android:textSize="18sp"
+        app:fontFamily="@font/acme"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="76dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:onClick="start"
+        android:text="Start"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/count"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="71dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:onClick="next"
+        android:text="Next"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="reset"
+        android:text="RESET"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="383dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="136dp"
+        android:textColor="#8BC745"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:fontFamily="@font/lemon"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="110dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/que">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:fontFamily="@font/black_ops_one"
+            android:includeFontPadding="true"
+            android:paddingLeft="10dp"
+
+            android:tag="1"
+            android:text="987"
+            android:textColor="#A073A5"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:fontFamily="@font/black_ops_one"
+            android:includeFontPadding="true"
+            android:paddingLeft="10dp"
+
+            android:tag="2"
+            android:text="987"
+            android:textColor="#49DB0B"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:fontFamily="@font/black_ops_one"
+            android:includeFontPadding="true"
+            android:paddingLeft="10dp"
+
+            android:tag="3"
+            android:text="987"
+            android:textColor="#D16C4B"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:fontFamily="@font/black_ops_one"
+            android:includeFontPadding="true"
+            android:paddingLeft="10dp"
+
+            android:tag="4"
+            android:text="987"
+            android:textColor="#D5D545"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="63dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
