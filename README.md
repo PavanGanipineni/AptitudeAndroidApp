@@ -5,7 +5,7 @@ The questions are automatically generated in any number.
 All the options are close to the original answer and it will calculate the time you took to complete the quiz.
 
 # Android Version Support
-From android 6(api 23) to 12(api 31)
+From android 6 (Api 23) to 12 (Api 31)
 
 
 # Screenshots 
